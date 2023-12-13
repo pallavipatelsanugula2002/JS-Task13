@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Stringcompression(a){
+
+var temp="";
+var result=""
+
+for(i=0;i<a.length;i++){
+    temp=a[i]
+     var count=1;
+    for(j=i+1;j<a.length;j++){
+       
+        if(temp==a[j]){
+            count=count+1
+            i++
+        }
+        else{
+            break;
+        }
+ 
+    } result=result+temp+count
+    
+    
+}
+console.log(result)
+}
+Stringcompression("aabcccccaaa")
+    </script>
+</body>
+</html>

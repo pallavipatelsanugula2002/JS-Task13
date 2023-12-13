@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        debugger;
+       function anagram(a,b){
+    var count=0;
+    if(a.length==b.length){
+        for(i=0;i<a.length;i++){
+         
+            for(j=0;j<a.length;j++){
+                if(a[i]==b[j]){
+                    count=count+1;
+                    } 
+            }
+        }
+        if(count==a.length){
+            console.log("It's an Anagram")
+        }
+        else{
+            console.log("Not Anagram")
+        }
+    }
+    else{
+        console.log("Not an Anagram")
+    }
+    
+    }
+    anagram("silenilt","listenus")
+       
+        
+        
+    </script>
+</body>
+</html>
